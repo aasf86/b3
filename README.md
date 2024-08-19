@@ -4,7 +4,7 @@ Solução para o desafio permitindo calcular CDB.
 ## 1º Clonar codigo fonte.
 Execute a seguinte linha de comando: *"necessário git cli"*
 ```cmd
-    git clone https://github.com/aasf86/B3
+    git clone https://github.com/aasf86/b3
 ```
 ## 2º Construir ambiente
 No diretório raiz do projeto, executar a seguinte linha de comando: *"necessário docker"*
