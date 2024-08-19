@@ -7,7 +7,11 @@ import { environment } from '../../environments/environment';
 })
 export class B3apiService {
 
-  constructor(private httpClient: HttpClient) {
-    console.log('env', environment)
-   }
+  private routeCalculateInvestment: string = '/api/CDB/calculate-investment';
+
+  constructor(private httpClient: HttpClient) { }
+
+  calculateInvestment(obg: any) {
+    return this.httpClient.post<any>(environment.api + this.routeCalculateInvestment, obg);
+  }
 }

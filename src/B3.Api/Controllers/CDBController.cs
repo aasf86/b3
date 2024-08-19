@@ -30,8 +30,8 @@ namespace B3.Api.Controllers
         /// </summary>
         /// <param name="cdbCalcIn"></param>
         /// <returns></returns>
-        [HttpPost]
-        public async Task<IActionResult> Insert([FromBody] CDBCalcIn cdbCalcIn)
+        [HttpPost("calculate-investment")]
+        public async Task<IActionResult> CalculateInvestment([FromBody] CDBCalcIn cdbCalcIn)
         {
             if (ModelState.IsValid)
             {

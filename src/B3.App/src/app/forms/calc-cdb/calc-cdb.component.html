@@ -1,2 +1,27 @@
-<p>calc-cdb works! aasf86 {{'anderson '+(10+65)+' - '+go()}} - {{name}}</p>
-<p>Title: {{titleOutSide}} </p>
+<div class="container">
+  <hr />
+  <h1>Calculo de CDB - [B]³</h1>
+  <form class="row g-3" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <div class="col-md-6">
+      <label for="value" class="form-label">Valor</label>
+      <input type="text" class="form-control" id="value" formControlName="value">
+    </div>
+    <div class="col-md-6">
+      <label for="months" class="form-label">Meses</label>
+      <input type="number" class="form-control" id="months" formControlName="months">
+    </div>    
+    <div class="col-2">
+      <button type="submit" class="btn btn-primary" [disabled]="!isValid()">Calcular</button>
+    </div>
+    <div class="col-10">
+      <div class="alert alert-success alert-dismissible fade show" role="alert" [hidden]="hiddenAlert">
+        <strong>Saldo bruto: </strong> {{resultCalculate.data.toFormatMoneyGrossTotal}}.<br />
+        <strong>Saldo liquido: </strong> {{resultCalculate.data.toFormatMoneyLiquidTotal}}.
+        <button type="button" class="btn-close" aria-label="Close" (click)="clickHidden()"></button>
+      </div>
+    </div>
+  </form>
+  <hr />
+</div>
+
+
