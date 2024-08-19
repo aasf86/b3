@@ -16,7 +16,7 @@ No diretório raiz do projeto, executar a seguinte linha de comando: *"necessár
 Uma vez construido o ambiente, na maquina hospedeira é possivel acessar os servicos.
 
 - Solução B3
-    - B3.App: http://localhost:3001/
+    - B3.App: http://localhost:3003/
         - *Aplicação SPA responsável pela iteração visual com usuário fornecendo tela para calculo de CDB.*
     - B3.Api: http://localhost:8081/swagger/index.html
         - *Aplicação rest web api responsável pela regra e calculo do CDB.*
