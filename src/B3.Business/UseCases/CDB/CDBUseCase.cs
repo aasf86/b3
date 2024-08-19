@@ -1,7 +1,6 @@
 ﻿using B3.Business.Contracts.UseCases.CDB;
 using B3.Business.Dtos;
 using B3.Business.Dtos.CDB;
-using B3.Business.UseCases.Validators;
 using Microsoft.Extensions.Logging;
 using Entity = B3.Domain.Entities;
 

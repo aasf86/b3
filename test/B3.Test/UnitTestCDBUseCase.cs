@@ -1,9 +1,8 @@
-﻿using B3.Business.Dtos.CDB;
-using B3.Business.Dtos;
+﻿using B3.Business.Dtos;
+using B3.Business.Dtos.CDB;
 using B3.Business.UseCases.CDB;
 using Microsoft.Extensions.Logging;
 using Moq;
-using B3.Domain.Entities.Rules;
 using static B3.Domain.Entities.Rules.CDBRules;
 
 namespace B3.Test
