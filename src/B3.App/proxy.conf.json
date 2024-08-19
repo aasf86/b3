@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "http://b3api:8081/",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  }
+}

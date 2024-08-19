@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.784122">
+  <ItemGroup>
+    <None Remove=".vscode\**" />
+    <None Remove="dist\**" />
+    <TypeScriptConfiguration Remove=".vscode\**" />
+    <TypeScriptConfiguration Remove="dist\**" />
+  </ItemGroup>
+</Project>

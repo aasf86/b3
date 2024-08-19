@@ -1,0 +1,22 @@
+# Desafio B3 [**Avaliação Dev 3**](https://www.b3.com.br/pt_br/para-voce)
+Solução para o desafio permitindo calcular CDB.
+
+## 1º Clonar codigo fonte.
+Execute a seguinte linha de comando: *"necessário git cli"*
+```cmd
+    git clone https://github.com/aasf86/B3
+```
+## 2º Construir ambiente
+No diretório raiz do projeto, executar a seguinte linha de comando: *"necessário docker"*
+```cmd
+    docker-compose up -d
+```
+---
+## 3º Demonstração de uso dos serviços.
+Uma vez construido o ambiente, na maquina hospedeira é possivel acessar os servicos.
+
+- Solução B3
+    - B3.App: http://localhost:3001/
+        - *Aplicação SPA responsável pela iteração visual com usuário fornecendo tela para calculo de CDB.*
+    - B3.Api: http://localhost:8081/swagger/index.html
+        - *Aplicação rest web api responsável pela regra e calculo do CDB.*
